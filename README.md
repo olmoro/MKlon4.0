@@ -7,6 +7,9 @@
 #### <p align="right">редакция от 11 апреля 2023 года
 
 
-
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_1.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_2.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_3.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_4.png)
 
 Прозвищем таких переплетающихся структур является "блюдо спагетти". 
