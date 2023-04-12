@@ -942,7 +942,7 @@ namespace Template
 И напоследок... Объявление класса делайте в отдельном файле, если привыкли делать по-ардуиновски, так это плохая привычка, от которой следует избавиться и чем скорее, тем лучше.
 
 ***
-<p align="center">![moro logo](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/moro_logo.jpg)
+![moro logo](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/moro_logo.jpg)
 
 ***
 ## <p align="center">Полезные ссылки<a name="useful_links"></a>
