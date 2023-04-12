@@ -80,7 +80,7 @@ SAMD21. Напряжение и ток в физических единицах 
 
 ***
 Измерители.
-![](https://github.com/olmoro/MKlon2.8/blob/main/Documents/Img/ui_measure.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/ui_measure.png)
 
 MKlon2. Как это работает.
 
