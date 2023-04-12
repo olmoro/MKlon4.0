@@ -18,6 +18,8 @@
 1. [Как это работает](#mklon)
 2. [Технические характеристики](#specifications)
 3. [FSM](#fsm)
+4. [Полезные ссылки](#useful_links)
+5. [About Me](#about)
 
 ***
 ## <p align="center"> Как это работает.
@@ -863,3 +865,18 @@ void driverTask( void * )
 Всё. Успехов!
                                Версия от   28 января 2021 года                                       
                                редакция    2 декабря 2022 года                                       
+
+
+![moro logo](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/moro_logo.jpg)
+
+***
+## <p align="center">Полезные ссылки<a name="useful_links"></a>
+- [OSS](https://ru.wikipedia.org/wiki/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5)
+- [Протокол обмена](http://leoniv.diod.club/articles/wake/wake.html)
+- [Проекты на ESP32](https://randomnerdtutorials.com/projects-esp32/)
+- [Как создать проект](https://dzen.ru/media/kotyara12/sozdanie-platformio--espidf-proekta-i-nastroika-platformioini-6324c68fb3d4c87d20ee80a6)
+- [Как строятся графики](https://www.chartjs.org/)
+- [Использование памяти в ESP32](https://dzen.ru/media/kotyara12/ispolzovanie-pamiati-v-esp32-63294a246a97da509e279eab)
+***
+## <p align="center"> About Me<a name="about"></a>
+🚀 I'm a full stack developer urk2t@yandex.ru
