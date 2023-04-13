@@ -1,0 +1,81 @@
+Partlist
+
+Exported from pow4.0v3.sch at 13.04.2023 13:11
+
+EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device              Package       Library              Sheet
+
+C1       1000µF 35v     CPOL-EUE5-10.5      E5-10,5       rcl_moro             1
+C2       100n           C-EUC0805           C0805         rcl_moro             1
+C3       1000µF 35v     CPOL-EUE5-10.5      E5-10,5       rcl_moro             1
+C4       100n           C-EUC0805           C0805         rcl_moro             1
+C5       4.7nF 1KV      C-EU075-042X103     C075-042X103  rcl_moro             1
+C6       470µF 35v      CPOL-EUE5-10.5      E5-10,5       rcl_moro             1
+C7       1mkF           C-EUC0805           C0805         rcl_moro             1
+C8       470µF 35v      CPOL-EUE5-10.5      E5-10,5       rcl_moro             1
+C9       1mkF           C-EUC0805           C0805         rcl_moro             1
+C10      0.1nF          C-EUC0603           C0603         rcl_moro             1
+C11      3.3µF          C-EUC0603           C0603         rcl_moro             1
+C12      1µF            C-EUC0603           C0603         rcl_moro             1
+C13      100n           C-EUC0603           C0603         rcl_moro             1
+C14      100n           C-EUC0603           C0603         rcl_moro             1
+C15      1µF            C-EUC0603           C0603         rcl_moro             1
+C16      100µF 25v      CPOL-EUE5-6         E5-6          rcl_moro             1
+DA1      MIC4420M       MIC4420M            SO-08         transistor-power     1
+DA2      MIC4420M       MIC4420M            SO-08         transistor-power     1
+DA4      LM321          LM321MF             SOT23-5       linear               1
+
+J1                      0R                  0R/10         jumper               1
+
+L1       560µH          BS11                BS11          inductor-neosid-moro 1
+L2       47MKHR         47MKHR              47MKHR        MKlon                1
+
+R1       na             R-EU_R1206          R1206         rcl_moro             1
+R2       39 Om          R-0515/20           0515/20       Q921                 1
+R3       1k2            R-0515/20           0515/20       Q921                 1
+R4       na             R-EU_R1206          R1206         rcl_moro             1
+R5       1R0            R-EU_R2512          R2512         rcl_moro             1
+R6       1R0            R-EU_R2512          R2512         rcl_moro             1
+R7       1R0            R-EU_R2512          R2512         rcl_moro             1
+R8       1R0            R-EU_R2512          R2512         rcl_moro             1
+R9       5k1            R-EU_R0603          R0603         rcl_moro             1
+R10      5k1            R-EU_R0603          R0603         rcl_moro             1
+R11      na             R-EU_R0603          R0603         rcl_moro             1
+R12      4k7            R-EU_R0603          R0603         rcl_moro             1
+R13      na             R-EU_R0603          R0603         rcl_moro             1
+R14      33R            R-EU_R1206          R1206         rcl_moro             1
+R15      10R            R-EU_R1206          R1206         rcl_moro             1
+R16      100k           R-EU_R0603          R0603         rcl_moro             1
+R17      51             R-EU_R0603          R0603         rcl_moro             1
+R18      10k            R-EU_R0603          R0603         rcl_moro             1
+R19      R04            R-EU_R2512          R2512         rcl_moro             1
+R20      R04            R-EU_R2512          R2512         rcl_moro             1
+R21      1k             R-EU_R1206          R1206         rcl_moro             1
+R22      1k             R-EU_R1206          R1206         rcl_moro             1
+R23      2k4            R-EU_0414/15        0414/15       rcl_moro             1
+R24      2k4            R-EU_0414/15        0414/15       rcl_moro             1
+
+SV1      PJ017          PJ017               PJ017         MKlon                1
+SV2      PJ017          PJ017               PJ017         MKlon                1
+SV3      PJ017          PJ017               PJ017         MKlon                1
+SV4      PJ017          PJ017               PJ017         MKlon                1
+
+VD1      MBR20100_M     MBR20100_M          TO220ACA      MKlon                1
+VD2      4148           DIODESMA            SMADIODE      microbuilder         1
+VD3      SS16           SS16                DO214AC       diode-1              1
+VD4      FR601          DIODE-1_DIODE-P6-15 DIODE-1_P6-15 urc-2base            1
+VD5      BZV55-C10      ZENER-DIODESOD80C   SOD80C        diode-1              1
+
+VT1      IRFP9540       IRFP9540            TO220BHH      MKlon                1
+VT2      STP16NF06FP    STP16NF06FP         TO220BHH      MKlon                1
+VT3      IRLML5203      IRLML5203           MICRO3        transistor-power     1
+VT4      IRLR2905       IRLR2905            TO252         transistor-fet_moro  1
+VT5      IRLR2905       IRLR2905            TO252         transistor-fet_moro  1
+
+X1                      FE08-2              FE08-2        con-lsta_moro        1
+X2                      JP1E                JP1           jumper_moro          1
+X3       WF-3 (WF-2)    WF-3                WF-3          moro2                1
+
