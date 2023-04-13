@@ -1,0 +1,115 @@
+Partlist
+
+Exported from esp-samd4.0v3.sch at 13.04.2023 13:19
+
+EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value             Device            Package           Library             Sheet
+
+C1       470n              C-EUC0805         C0805             rcl_moro            1
+C2       1µF               C-EUC0603         C0603             rcl_moro            1
+C3       1mkF              C-EUC0805         C0805             rcl_moro            1
+C4       10uF              CPOL-EUCT3528     CT3528            rcl_moro            1
+C5       470n              C-EUC0805         C0805             rcl_moro            1
+C6       470n              C-EUC0805         C0805             rcl_moro            1
+C7       33µF              CPOL-EUCT6032     CT6032            rcl_moro            1
+C8       3.3µF             C-EUC0805         C0805             rcl_moro            2
+C9       470p              C-EUC0603         C0603             rcl_moro            2
+C10      470µF 10v         CPOL-EUE5-8.5     E5-8,5            rcl_moro            2
+C11      10n               C-EUC0603         C0603             rcl_moro            2
+C12      3.3µF             C-EUC0805         C0805             rcl_moro            2
+C13      3.3µF             C-EUC0805         C0805             rcl_moro            2
+C14      2n2               C-EUC0603         C0603             rcl_moro            2
+C15      na                C-EUC0603         C0603             rcl_moro            2
+C16      3.3µF             C-EUC0805         C0805             rcl_moro            2
+C17      3.3µF             C-EUC0805         C0805             rcl_moro            2
+C18      1µF               C-EUC0603         C0603             rcl_moro            2
+C19      1µF               C-EUC0603         C0603             rcl_moro            2
+C22      3.3µF             C-EUC0805         C0805             rcl_moro            2
+C23      3.3µF             C-EUC0805         C0805             rcl_moro            2
+C24      4.7nF 1KV         C-EU050-024X044   C050-024X044      rcl_moro            2
+
+D1       DS1232LPS-2       DS1232LPS-2       SO-08             texas_moro          1
+DA1      MC34063AD         MC34063AD         SO08              v-reg-3             2
+
+F1       MF-SMDF200        MF-SMDF200        MF-SMDF050        fuse_moro           2
+
+FB1      BLM21AG221SN1D    FERRITE0805       0805              microbuilder_v2     2
+FB2      BLM21AG221SN1D    FERRITE0805       0805              microbuilder_v2     2
+
+HA1      HCM1203X          BMT1205XH7.5      BMT1205XH7.5      buzzer-moro         1
+
+J1                         JACK-PLUG0        SPC4077           con-jack            2
+
+L4       SD74R-221         DR74              DR74              inductors           2
+
+R1       150               R-EU_R0603        R0603             rcl_moro            1
+R2       330               R-EU_R0603        R0603             rcl_moro            1
+R3       470               R-EU_R0603        R0603             rcl_moro            1
+R4       10k0              R-EU_R0603        R0603             rcl_moro            1
+R5       30k               R-EU_R0603        R0603             rcl_moro            1
+R6       39k0              R-EU_R0603        R0603             rcl_moro            1
+R7       4k70              R-EU_R0603        R0603             rcl_moro            1
+R8       1k50              R-EU_R0603        R0603             rcl_moro            1
+R9       0R33              R-EU_R0603        R0603             rcl_moro            2
+R10      10k0              R-EU_R0603        R0603             rcl_moro            2
+R11      3k0               R-EU_R0603        R0603             rcl_moro            2
+R12      1k                R-EU_R0603        R0603             rcl_moro            2
+R13      10k0              R-EU_R0603        R0603             rcl_moro            2
+R14      k300              R-EU_R0603        R0603             rcl_moro            2
+R15      4k7               R-EU_R0603        R0603             rcl_moro            2
+R16      4k7               R-EU_R0603        R0603             rcl_moro            2
+R17      1k                R-EU_R0603        R0603             rcl_moro            2
+R18      1k                R-EU_R0603        R0603             rcl_moro            2
+R19      1k                R-EU_R0603        R0603             rcl_moro            2
+R20      680               R-EU_R0603        R0603             rcl_moro            2
+R21      k82               R-EU_R0603        R0603             rcl_moro            2
+R22      10R               R-EU_R0603        R0603             rcl_moro            2
+R23      10R               R-EU_R0603        R0603             rcl_moro            2
+R24      470               R-EU_R0603        R0603             rcl_moro            2
+R25      100k              R-EU_R0603        R0603             rcl_moro            2
+R33      3k0               R-EU_R0603        R0603             rcl_moro            2
+R34      330               R-EU_R0603        R0603             rcl_moro            2
+R35      2.2k              R-EU_R0603        R0603             rcl_moro            2
+R36      680               R-EU_R0603        R0603             rcl_moro            2
+
+S1       SWT-3             31-XX             B3F-31XX          switch-omron        2
+SV1                        FE05-2W           FE05-2W           con-lsta_moro       1
+SV2                        FE05-2W           FE05-2W           con-lsta_moro       1
+SV3                        FE05-2W           FE05-2W           con-lsta_moro       2
+
+U3       B0505S-1W         HLK-1D1212        HLK-1D1212        wx-d21              2
+U4       B0505S-1W         HLK-1D1212        HLK-1D1212        wx-d21              2
+
+VD1      LED5MMRGB_90      LED5MMRGB_90      LED5MMRGB_90      MKlon               1
+VD2      1N4148            DIODE-MINIMELF    MINIMELF          diode               1
+VD3      M4                SS16              DO214AC           diode-1             2
+VD4      M4                SS16              DO214AC           diode-1             2
+VD5      SS16              SS16              DO214AC           diode-1             2
+VD6      LED3MMR           LED3MMR           LED3MMR           led                 2
+VD7      LED3MMR           LED3MMR           LED3MMR           led                 2
+VD8      LED3MMG           LED3MMG           LED3MMG           led                 2
+VD9      4148              DIODE-MINIMELF    MINIMELF          diode               2
+VD10     4148              DIODE-MINIMELF    MINIMELF          diode               2
+VD11     SS14              SS16              DO214AC           diode-1             2
+VD12     SS14              SS16              DO214AC           diode-1             2
+
+VR1      TL(V)431          TL431-SOT23-3     SOT23             moro4               2
+
+VT1      PDTA123ET(*21)    BCR185            SOT23-BEC         digital-transistors 1
+VT5      PDTA123ET(*21)    MUN2113T1         SC59-BEC          transistor-pnp      2
+
+VTL4     K10104C           SFH618A-3X007     SMD4-7            optocoupler         2
+
+X1       DS1002-01-1X19V13 DS1002-01-1X19V13 DS1002-01-1X19V13 MKlon               1
+X2       DS1002-01-1X19V13 DS1002-01-1X19V13 DS1002-01-1X19V13 MKlon               1
+X3       FE14              FE14              FE14              con-lsta_moro       1
+X4       FE04              FE04              FE04              con-lsta_moro       1
+X5       MA08-2H           MA08-2H           MA08-2H           con-lstb_moro       2
+X6       DS1002-01-1X14V13 DS1002-01-1X14V13 DS1002-01-1X14V13 MKlon               2
+X7       DS1002-01-1X14V13 DS1002-01-1X14V13 DS1002-01-1X14V13 MKlon               2
+X8       FE14              FE14              FE14              con-lsta_moro       1
+X9       FE04              FE04              FE04              con-lsta_moro       1
+
