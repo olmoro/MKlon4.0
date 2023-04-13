@@ -34,8 +34,11 @@
 3. [Технические характеристики](#specifications)
 4. [FSM](#fsm)
 5. [Первый проект](#first_project)
-6. [Полезные ссылки](#useful_links)
-7. [About Me](#about)
+6. [Документы](#docs)
+- [Схема платы управления](#sch1)
+- [Схема силовой платы](#sch2)
+7. [Полезные ссылки](#useful_links)
+8. [About Me](#about)
 
 ***
 ## <p align="center"> Как это работает.<a name="hard"></a>
@@ -1021,6 +1024,14 @@ namespace Template
 [^](#menu)
 ***
 ![moro logo](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/moro_logo.jpg)
+
+***
+## <p align="center"> Документация.<a name="docs"></a>
+
+## <p align="center"> Плата управления. Схема.<a name="sch1"></a>
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/esp/sch/esp-samd4.0v3(1).pdf)
+## <p align="center"> Силовая плата. Схема.<a name="sch2"></a>
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/esp/sch/esp-samd4.0v3(2).pdf)
 
 ***
 ## <p align="center">Полезные ссылки<a name="useful_links"></a>
