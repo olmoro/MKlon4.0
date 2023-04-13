@@ -940,7 +940,8 @@ void driverTask( void * )
 
 Всё. Успехов!
                                Версия FSM от 28 января  2021 года                                       
-                               редакция       2 декабря 2022 года                                       
+                               редакция       2 декабря 2022 года  
+                               [^](#menu)                                     
 ***
 ## <p align="center"> Первый проект.<a name="first_project"></a>
 
@@ -1009,7 +1010,7 @@ namespace Template
 Передохнём... Далее будем работать с [классами](http://cppstudio.com/post/439/) - без них никак. 
 
 И напоследок... Объявление класса будем делайть в отдельном файле, если привыкли делать по-ардуиновски, так это плохая привычка, от которой следует избавиться и чем скорее, тем лучше.
-
+[^](#menu)
 ***
 ![moro logo](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/moro_logo.jpg)
 
@@ -1021,6 +1022,8 @@ namespace Template
 - [Как создать проект](https://dzen.ru/media/kotyara12/sozdanie-platformio--espidf-proekta-i-nastroika-platformioini-6324c68fb3d4c87d20ee80a6)
 - [Как строятся графики](https://www.chartjs.org/)
 - [Использование памяти в ESP32](https://dzen.ru/media/kotyara12/ispolzovanie-pamiati-v-esp32-63294a246a97da509e279eab)
+[^](#menu)
 ***
 ## <p align="center"> About Me<a name="about"></a>
 🚀 I'm a full stack developer urk2t@yandex.ru
+[^](#menu)
