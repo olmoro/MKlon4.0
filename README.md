@@ -1029,7 +1029,7 @@ namespace Template
 ## <p align="center"> Документация.<a name="docs"></a>
 
 ## <p align="center"> Плата управления. Схема.<a name="sch1"></a>
-![](https://github.com/olmoro/MKlon4.0/blob/main/documents/esp/sch/esp-samd4.0v3(1).pdf)
+![sch1](https://github.com/olmoro/MKlon4.0/blob/main/documents/esp/sch/esp-samd4.0v3(1).pdf)
 ## <p align="center"> Силовая плата. Схема.<a name="sch2"></a>
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/esp/sch/esp-samd4.0v3(2).pdf)
 
