@@ -237,13 +237,26 @@ VD6 следует выбирать с минимальным обратным �
 
 Используемые библиотеки:
 
-- TFT_eSPI
-- AutoConnect
-- PageBuilder
-- AutoPID
-- Button
+- TFT_eSPI @ 2.3.59
+- AutoConnect @ 0.9.9
+- PageBuilder @ 1.3.3
+- ArduinoJson @ 6.11.0
+- AutoPID @ 1.0.3
+- Button  http://samopal.pro/arduino-button-2/
 
 Во избежание мелких недоразумений библиотеки размещены непосредственно в проекте
+
+Компиляция версии MKlon2v7a от 26 марта 2023г:
+
+PLATFORM: Espressif 32 (3.5.0) > Espressif ESP32 Dev Module
+
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+RAM:   [=         ]  14.8% (used 48460 bytes from 327680 bytes)
+Flash: [========= ]  94.4% (used 1237806 bytes from 1310720 bytes
+
+HARDWARE: ESP32 240MHz, 320KB RAM, 16MB Flash
+RAM:   [=         ]  14.8% (used 48460 bytes from 327680 bytes)
+Flash: [==        ]  18.9% (used 1237806 bytes from 6553600 bytes)
 
 [^](#menu)
 ***

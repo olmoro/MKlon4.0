@@ -1,0 +1,203 @@
+
+      Пример реализации одного шага конечного автомата зарядного устройства
+      в режиме, известном как CCCV.
+
+      Примечания:
+      Для упрощения восприятия в этом примере управление всеми ресурсами - как аппаратными, 
+      так и программными производится через класс MTools
+    
+// Файл cccvfsm.h
+
+  /*  Объявляется поле имен для этого (CCCV) режима. Имена классов, констант
+    и переменных к большой радости любителей "копи-паста" в других режимах можно 
+    использовать без изменений. */
+namespace MCccv
+{
+  /* Здесь объявляются и определяются общие для этого поля имен константы */
+  struct MConst
+  {
+    static constexpr float fixed_kp_v = 0.100f;
+    ...
+  };
+
+  /* Объявляются ВСЕ КЛАССЫ, описывающие состояния (шаги) режима, В ЛЮБОЙ ПОСЛЕДОВАТЕЛЬНОСТИ. */
+  class M... 
+  {};
+
+  class MUpCurrent : public MState
+  {
+    public:   
+      MUpCurrent(MTools * Tools);
+      MState * fsm() override;      // Объявлена виртуальная функция, 
+                                    // вызывается только по адресу 
+                                    // и возвращает указатель на состояние.
+    private:
+      /* Здесь объявляются и определяются константы и переменные этого класса. */
+      static constexpr float voltage_max_factor = 0.95f;
+      static constexpr float voltage_max = 14.4f;
+      float maxV;                   // Переменную можно объявить видимой только в этом классе ... 
+  };
+
+  class M...
+  {};
+};
+
+
+
+// Файл cccvfsm.cpp
+
+namespace MCccv
+{
+  float maxV;   // ... или здесь, но видимой во всех классах данного поля имен MCccv
+
+  /*  Начальный этап заряда - ток поднимается не выше заданного уровня, при достижении 
+    заданного максимального напряжения - переход к его удержанию. 
+    Подсчитывается время и отданный заряд, оператор может лишь прекратить заряд. */
+
+  // Состояние "Подъем и удержание максимального тока" описывается классом MUpCurrent
+  MUpCurrent::MUpCurrent(MTools * Tools) : MState(Tools)
+  {   
+    /*  Конструктор класса выполняет инициализацию при входе в это состояние
+      только в том случае, если совершен переход из другого состояния, а не 
+      возврат, когда такого перехода не было. (Эта функция возложена на диспетчер)*/
+
+    maxV = Tools->readNvsFloat("cccv", "maxV", voltage_max);  /* Так берутся данные из
+      энергонезависимой памяти - "имя", "ключ", значение по умолчанию */
+
+    Tools->showMode((char*)"  CONST CURRENT   ");     // Показывать фазу заряда
+    Tools->showHelp((char*)"   *C, C - STOP   ");     // Показывать активные кнопки как помощь
+    Tools->ledsGreen();                               // Светодиод включить зеленым
+    Tools->clrTimeCounter();                          // Обнулить счетчик времени
+    Tools->clrAhCharge();                             // Обнулить счетчик ампер-часов
+
+    /* Включение преобразователя и коммутатора драйвером силовой платы.
+     Параметры PID-регулятора заданы в настройках прибора. Здесь задаются сетпойнты 
+     по напряжению и току. Подъем тока и удержание производится ПИД-регулятором.
+    */ 
+    Tools->txPowerAuto(maxV, maxI, maxS);             /* Начать процесс заряда, подав
+      команду с максимальным напряжением, током и скоростью нарастания тока. На этом 
+      инициализация состояния закончена. Не забываем, что конструктор класса ничего не 
+      возвращает при исполнении */ 
+  }
+    /*  Методы класса здесь в единственном числе, и представлены функцией */   
+  MUpCurrent::MState * MUpCurrent::fsm()
+  {
+    /* Здесь располагается всё, что надо выполнить при каждом вхождении в это состояние: */
+    Tools->chargeCalculations();                        // Обновить отданные ампер-часы.
+    /*  Проверим, не была ли нажата, какая и как долго, кнопка. И если да, то "бииип" и 
+      закажем переход в указанное состояние, иначе выполним то, что должны сделать перед 
+      повторным входом в это же состояние. */ 
+    switch ( Tools->getKey() )
+    {
+      case MKeyboard::C_CLICK:
+      case MKeyboard::C_LONG_CLICK: Tools->buzzerOn();  /* Если зафиксировано короткое или
+        длинное нажатие, то заказано досрочное прекращение заряда оператором и ... */
+      return new MStop(Tools);                          // ... переход в состояние MStop.
+      // case ... остальные кнопки,если надо.
+      default:;
+    }
+
+      /*  Если по кнопкам переходов нет, то выполняем проверки, например, не пора ли переходить 
+        ко второй фазе заряда, если напряжение на батарее достигло некоторого уровня: */
+    if(Tools->getRealVoltage() >= maxV * voltageMaxFactor);
+    return new MKeepVmax(Tools);                        // ... переход к удержанию напряжения. 
+    
+      /*  Если ничего из вышеперечисленного не случилось, обновляем индикацию ... */
+    Tools->showVolt(Tools->getRealVoltage(), 3);  // Три знака после зпт
+    Tools->showAmp (Tools->getRealCurrent(), 2);  // ... двух достаточно
+    Tools->initBar(TFT_GREEN);                    /* Бегущая зеленая полоска, когда 
+      состоится переход ко второй фазе её назначим желтой */  
+    Tools->showDuration(Tools->getChargeTimeCounter(), MDisplay::SEC); /* Это время - 
+      добавилась 0,1 с - ровно через столько операционная система производит проверку 
+      состояния */
+    Tools->showAh(Tools->getAhCharge());  /* Обновим набежавшие ампер-часы */
+    return this;   /* И если ничего не забыли, закажем операционке возврат в это состояние, 
+      естественно, без инициализации. Кстати, если надо "вывалиться" из текущего режима в 
+      главное меню, то заказывается такой переход не менее красиво: return nullptr; */ 
+  };  // MUpCurrent
+
+  ...
+};
+
+
+//====================================
+
+
+Файл cccvfsm.h
+
+#ifndef _CCCVFSM_H_
+#define _CCCVFSM_H_
+
+#include "mstate.h"
+
+namespace MCccv
+{
+  struct MConst
+  {
+    static constexpr float fixed_kp_v = 2.10f;
+    ...
+  };
+
+  class M... {};
+
+  class MUpCurrent : public MState
+  {
+    public:   
+      MUpCurrent(MTools * Tools);
+      MState * fsm() override;
+    private:
+      static constexpr float voltage_max_factor = 0.95f;
+      static constexpr float voltage_max = 14.4f;
+      float maxV;
+  };
+};
+#endif
+
+
+
+
+
+Файл cccvfsm.cpp
+
+#include "cccvfsm.h"
+#include "mtools.h"
+#include <Arduino.h>
+#include <string>
+
+namespace MCccv
+{
+  //...
+  MUpCurrent::MUpCurrent(MTools * Tools) : MState(Tools)
+  {   
+    maxV = Tools->readNvsFloat("cccv", "maxV", voltage_max);
+
+    Tools->showMode((char*)"  CONST CURRENT   ");
+    Tools->showHelp((char*)"   *C, C - STOP   ");
+    Tools->ledsGreen();
+    Tools->clrTimeCounter();
+    Tools->clrAhCharge();
+    Tools->txPowerAuto(maxV, maxI, maxS);
+  }
+
+  MUpCurrent::MState * MUpCurrent::fsm()
+  {
+    Tools->chargeCalculations();
+    switch ( Tools->getKey() )
+    {
+      case MKeyboard::C_CLICK:
+      case MKeyboard::C_LONG_CLICK: Tools->buzzerOn();         return new MStop(Tools);                          // ... переход в состояние MStop.
+      default:;
+    }
+
+    if(Tools->getRealVoltage() >= maxV * voltageMaxFactor);    return new MKeepVmax(Tools);
+    
+    Tools->showVolt(Tools->getRealVoltage(), 3);
+    Tools->showAmp (Tools->getRealCurrent(), 2, 3);
+    Tools->initBar(TFT_GREEN);
+    Tools->showDuration(Tools->getChargeTimeCounter(), MDisplay::SEC);
+    Tools->showAh(Tools->getAhCharge());
+    return this;
+  };
+
+  //...
+};

@@ -47,7 +47,17 @@ namespace MPins
     // * - справочно, настройки интерфейса дисплея задавать в mklon27_setup.h
   #endif
 
-    // UART
+  // #ifdef MKLON2V5A
+  //   // Порты дисплея (справочно). Порт IO19 не занимать, зарезервирован для MISO 
+  //   constexpr char vspi_scl_pin   = 18;   //          VSPI_SCL*    Порт тактовый
+  //   constexpr char vspi_sda_pin   = 23;   //          VSPI_SDA*    Порт данных
+  //   constexpr char lcd_res_pin    = -1;   //          LCD_RES*     Порт рестарта (в v5 ОШИБКА переподключить к EN)
+  //   constexpr char lcd_dc_pin     = 05;   //          LCD_DC*      Порт выбора
+  //   constexpr char lcd_cs_pin     = -1;   //          Grounded*
+  //   // * - справочно, настройки интерфейса дисплея задавать в mklon25_setup.h
+  // #endif
+
+  // UART
   constexpr char u2rxd_pin        = 16;   // in       U2RXD       Порт приемника
   constexpr char u2txd_pin        = 17;   // out      U2TXD       Порт передатчика
 
