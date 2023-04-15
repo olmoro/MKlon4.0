@@ -35,11 +35,12 @@
 3. [Технические характеристики](#specifications)
 4. [FSM](#fsm)
 5. [Первый проект](#first_project)
-6. [Документы](#docs)
+6. [Драйвер SAMD21](#driver)
+7. [Документы](#docs)
 - [Схема платы управления](#sch1)
 - [Схема силовой платы](#sch2)
-7. [Полезные ссылки](#useful_links)
-8. [About Me](#about)
+8. [Полезные ссылки](#useful_links)
+9. [About Me](#about)
 
 ***
 ## <p align="center"> Как это работает.<a name="hard"></a>
@@ -1266,7 +1267,13 @@ namespace MCccv
 [^](#menu)
 ***
 
-
+## <p align="center"> Работа драйвера SAMD21.<a name="driver"></a>
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/I_measure.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/U_measure.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/PWM_exe.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/PID_control.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/UART_request.png)
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/UART_full.png)
 
 ***
 ![moro logo](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/moro_logo.jpg)
