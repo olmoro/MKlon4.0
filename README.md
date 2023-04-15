@@ -4,7 +4,8 @@
 ## <p align="center">Зарядное устройство на модулях ESP32 и SAMD21.
 ### <p align="center">(реализация конечного автомата в проекте зарядного устройства)
 ## <p align="center">Проект Arduino.
-#### <p align="right">редакция от 14 апреля 2023 года
+#### <p align="right">редакция от 15 апреля 2023 года
+#### <p align="right">добавлен список команд
 
 
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_2.png)
@@ -245,6 +246,51 @@ VD6 следует выбирать с минимальным обратным �
 - Button  http://samopal.pro/arduino-button-2/
 
 Во избежание мелких недоразумений библиотеки размещены непосредственно в проекте
+
+Команды обмена между модулями по асинхронному интерфейсу:
+
+1. Команды чтения результатов измерений
+- txReadUIS() - запрос на получение текущего значения тока, напряжения и состояния;
+- txGetState() - то же только состояния;
+2. Команды stop/go
+- txPowerAuto(float spV, float spI) - задать параметры DCDC и включить;
+- txPowerStop()- DCDC выключить;
+- txPowerMode(float spV, float spI, uint8_t mode) - тестовое включение с выбором режима ПИД;
+- txDischargeGo(float spI) - задать ток разряда и подключить;
+3. Команды работы с измерителями
+- txGetFactorU() - запросить коэффициент преобразования в милливольты;
+- txSetFactorU(short val) - записать;
+- txSetFactorDefaultU() - восстановить заводское значение;
+- txGetSmoothU()- запросить параметр сглаживания по напряжению;
+- txSetSmoothU(short val) - записать;
+- txGetShiftU() - запросить приборный сдвиг по напряжению;
+- txSetShiftU(short val) - записать;
+- txGetFactorI() - запросить по току;
+- txSetFactorI(short val);
+- txSetFactorDefaultI();
+- txGetSmoothI();
+- txSetSmoothI(short val);
+- txGetShiftI();
+- txSetShiftI(short val);
+4. Команды работы с ПИД-регулятором
+- txSetPidConfig(uint8_t m, float kp, float ki, float kd, uint16_t minOut, uint16_t maxOut);
+- txSetPidCoeff(unsigned short m, float kp, float ki, float kd);
+- txSetPidCoeffV(float kp, float ki, float kd);
+- txSetPidCoeffI(float kp, float ki, float kd);
+- txSetPidCoeffD(float kp, float ki, float kd);
+- txSetPidOutputRange(uint8_t m, uint16_t minOut, uint16_t maxOut);
+- txSetPidReconfig(uint8_t m, float kp, float ki, float kd, uint16_t minOut, uint16_t maxOut);
+- txPidClear();
+- txGetPidTreaty() - согласование параметров при обмене;
+- txGetPidConfig() - запросит текщие настройки ПИД-регулятора
+- txSetPidFrequency(unsigned short hz) - изменить частоту регулирования;
+5. Тестовые    
+- txGetProbes();
+- txGetAdcOffset();
+- txSetAdcOffset(short val);
+- txAdcAutoOffset() - не реализована, резерв;
+6. И ещё команды, полный список см. в файле mtools.h.
+
 
 Компиляция версии MKlon2v7a от 26 марта 2023г:
 
