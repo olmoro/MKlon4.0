@@ -1,0 +1,68 @@
+Partlist
+
+Exported from pult_v1.1.sch at 17.04.2023 16:43
+
+EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value             Device                        Package               Library             Sheet
+
+C1       33uF              CPOL-EUCT6032                 CT6032                rcl_moro            1
+C2       100nF             C-EUC0603                     C0603                 rcl_moro            1
+C3       1uF               C-EUC0603                     C0603                 rcl_moro            1
+C4       10uF              CPOL-EUCT3216                 CT3216                rcl_moro            1
+C5       100n              C-EUC0603                     C0603                 rcl_moro            1
+C6       33/10v C20        CPOL-EUCT6032                 CT6032                rcl                 1
+DVT1     PDTA123ET(*21)    BCR185                        SOT23-BEC             digital-transistors 1
+FB1                        FERRITE0805                   0805                  microbuilder_v2     1
+FB2                        FERRITE0805                   0805                  microbuilder_v2     1
+FB3                        FERRITE0805                   0805                  microbuilder_v2     1
+FB4                        FERRITE0805                   0805                  microbuilder_v2     1
+FB5                        FERRITE0805                   0805                  microbuilder_v2     1
+FB6                        FERRITE0805                   0805                  microbuilder_v2     1
+FB7                        FERRITE0805                   0805                  microbuilder_v2     1
+FB8                        FERRITE0805                   0805                  microbuilder_v2     1
+FB9                        FERRITE0805                   0805                  microbuilder_v2     1
+FB10                       FERRITE0805                   0805                  microbuilder_v2     1
+FB11                       FERRITE0805                   0805                  microbuilder_v2     1
+FB12                       FERRITE0805                   0805                  microbuilder_v2     1
+HA1      HCM1203X          BMT1205XH7.5                  BMT1205XH7.5          buzzer-moro         1
+J1                         JACK-PLUG0                    SPC4077               con-jack            1
+LED1     5MMRGBLED         5MMRGBLED                     LED5MMRGB             led_rgb             1
+R1       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R2       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R3       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R4       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R5       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R6       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R7       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R8       3.3k              R-EU_R0603                    R0603                 rcl_moro            1
+R9       4k7               R-EU_R0603                    R0603                 rcl_moro            1
+R10      12k               R-EU_R0603                    R0603                 rcl_moro            1
+R11      150               R-EU_R0603                    R0603                 rcl_moro            1
+R12      330               R-EU_R0603                    R0603                 rcl_moro            1
+R13      470               R-EU_R0603                    R0603                 rcl_moro            1
+R14      4k7               R-EU_R0603                    R0603                 rcl_moro            1
+R15      4k7               R-EU_R0603                    R0603                 rcl_moro            1
+R16      4k7               R-EU_R0603                    R0603                 rcl_moro            1
+R17      4k7               R-EU_R0603                    R0603                 rcl_moro            1
+R18      4k7               R-EU_R0603                    R0603                 rcl_moro            1
+R19      4k7               R-EU_R0603                    R0603                 rcl_moro            1
+RESET    2-SMD-1101NE      SWITCH-MOMENTARY-2-SMD-1101NE TACTILE-SWITCH-1101NE SparkFun            1
+S-C                        TAC_SWITCHPTH                 TACTILE-PTH           SparkFun            1
+S-DN                       TAC_SWITCHPTH                 TACTILE-PTH           SparkFun            1
+S-P                        TAC_SWITCHPTH                 TACTILE-PTH           SparkFun            1
+SDH1     SDCMF109MAX       SDCARD                        SDCARD_SMT_4U06132    microbuilder_v2     1
+SV2      FE05-2R           FE05-2R                       FE05-2R               con-lsta_moro       1
+SX1      PJ-320            PJ-320                        PJ-320                SparkFun            1
+SX2      PJ-320            PJ-320                        PJ-320                SparkFun            1
+SX3      PJ-320            PJ-320                        PJ-320                SparkFun            1
+SX4      PJ-320            PJ-320                        PJ-320                SparkFun            1
+SX5      PJ-320            PJ-320                        PJ-320                SparkFun            1
+SX6      PJ-320            PJ-320                        PJ-320                SparkFun            1
+S_B                        TAC_SWITCHPTH                 TACTILE-PTH           SparkFun            1
+S_UP                       TAC_SWITCHPTH                 TACTILE-PTH           SparkFun            1
+U2       RGB_128           RGB_128                       RGB_128               Q921                1
+X1       DS1002-01-1X15V13 DS1002-01-1X15V13             DS1002-01-1X15V13     MKlon               1
+X2       DS1002-01-1X15V13 DS1002-01-1X15V13             DS1002-01-1X15V13     MKlon               1
