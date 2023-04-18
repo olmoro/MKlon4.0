@@ -4,9 +4,9 @@
 ## <p align="center">Зарядное устройство на модулях ESP32 и SAMD21.
 ### <p align="center">(реализация конечного автомата в проекте зарядного устройства)
 ## <p align="center">Проект Arduino.
-#### <p align="right">2023.04.15 добавлен [список команд](main)
-#### <p align="right">2023.04.18 добавлен [пульт](pult)
-#### <p align="right">2023.04.19 добавлен [SAMD21](driver)
+#### <p align="right">2023.04.15 добавлен список команд
+#### <p align="right">2023.04.18 добавлен пульт
+#### <p align="right">2023.04.19 добавлен драйвер
 
 
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_2.png)
