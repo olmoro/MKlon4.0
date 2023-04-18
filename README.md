@@ -1282,13 +1282,24 @@ namespace MCccv
 ***
 
 ## <p align="center">6. Драйвер SAMD21.<a name="driver"></a>
+
+Измерение тока занимает:
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/I_measure.png)
+
+Измерение напряжения занимает:
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/U_measure.png)
+
+ШИМ преобразователя занимает:
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/PWM_exe.png)
+
+ПИД-регулирование занимает:
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/PID_control.png)
+
+Прием посылки от ESP32 не мешает измерениям:
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/UART_request.png)
+
+Ответная посылка передается не мешая измерениям:
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/UART_full.png)
-Доказательства того, что это реализуемо.
 
 Данная реализация драйвера задумывалась как масштабируемое техническое решение - это как у поёт Алёна Апина: "я его слепила из того что было". А потому нелишне будет узнать, как пересчитать "хотелки" в технические понятия.
 
