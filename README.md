@@ -1384,6 +1384,13 @@ void initPwm()
 
 Многочисленные эксперименты с подбором Kp, Ki и Kd 5-кнопочной клавиатурой - на грани нервного срыва - завидую тем, кто будет это делать на сенсорном дисплее.
 
+Замечен интересный эффект при токе в нагрузке менее 150 мА:
+![](https://github.com/olmoro/MKlon4.0/blob/main/documents/samd/docs/img/cc_100mA.png)
+
+
+
+
+
 [^](#menu)
 ***
 ![moro logo](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/moro_logo.jpg)
