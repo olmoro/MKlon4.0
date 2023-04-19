@@ -1357,6 +1357,24 @@ TCC2/WO[1]: PA01, PA13, PA17
 
 Попытка использовать другой, не помню какой таймер, имела печальный конец - это оказался таймер, задействованный в USB-интерфейсе... а SWD отказался восстанавливать загрузчик - так и лежит исправный, но в отказе работать. Впрочем, 9 разрядов оказалось вполне достаточно.
 
+Инициализация таймера:
+```c++
+#include "SAMD21turboPWM.h"
+
+TurboPWM pwm;
+  // Параметры настройки таймера T2
+constexpr bool                    pwm_turbo       = true;   // turbo on/off
+constexpr unsigned int            pwm_tccdiv_out  = 1;      // делитель для таймера 2 (1,2,4,8,16,64,256,1024)
+constexpr unsigned long long int  pwm_steps_out   = 0x01FF; // разрешение для таймера 2 (2 to counter_size)
+
+void initPwm()
+{
+  pwm.setClockDivider(1, pwm_turbo);           // Input clock is divided by 1 and sent to Generic Clock, Turbo is On/Off
+  pwm.timer(2, pwm_tccdiv_out,  pwm_steps_out,  true);  // T2, divider, resolution (подстройка частоты), single-slope PWM
+  pwm.enable(2, false);
+}
+```
+
 - Параметры ПИД-регулятора:
 
 Подбор коэффициентов ПИД-регулятора, действительно, то ещё шаманство. На картинке это выглядит весьма привлекательно:
