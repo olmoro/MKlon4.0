@@ -38,7 +38,6 @@
 - [Выбор таймера ШИМ](#timer2")
 - [Выбор ПИД-регулятора](#fast_pid)
 - [Подбор параметров](#par_pid)
-]
 7. [Документы](#docs)
 - [Схема платы управления](#sch1)
 - [Схема силовой платы](#sch2)
@@ -1329,6 +1328,7 @@ void initMeasure()
 }
 ```
 Следует добавить, что НЧ фильтры на входах измерителей имеют частоту среза примерно по 8-10 килогерц. Даёт ли это равенство какой-то эффект осталось не выясненным, но частота среза взята из рекомендации для INA226 - а вдруг?
+[^](#menu)
 
 ## <p align="center">Коэффициент пересчета в миллиамперы.<a name="kma"></a>
 
@@ -1343,6 +1343,7 @@ constexpr float KSHUNT = 1000.0/20.0F;  // mA/mV (1A/20mV) параметр шу
   // Ожидаемый коэффициент преобразования в миллиамперы        
 constexpr unsigned short factor_default_i = short(KSHUNT*VREFA*GAIN*SHL/ADCMAX);  // 0x7918
 ```
+[^](#menu)
 
 ## <p align="center">Коэффициент пересчета в милливольтры.<a name="kmv"></a>
 
@@ -1354,6 +1355,7 @@ constexpr float KDEL   = (RUP+RDN)/RDN;
   // Ожидаемый коэффициент преобразования в милливольты        
 constexpr unsigned short factor_default_v = short(KDEL*VREFA*GAIN*SHL/ADCMAX); //0x5326
 ```
+[^](#menu)
 
 ## <p align="center"> Выбор таймера ШИМ.<a name="timer2"></a>
 
@@ -1395,6 +1397,7 @@ void initPwm()
   pwm.enable(2, false);
 }
 ```
+[^](#menu)
 
 ## <p align="center"> Выбор ПИД-регулятора.<a name="fast_pid"></a>
 
@@ -1515,8 +1518,9 @@ void restoreState( int mode )
   }
 }
 ```
+[^](#menu)
 
-## <p align="center"> Подбор параметров.<a name="par_pid"></a>
+## <p align="center"> Подбор параметров.<a name="par_pid"></a> 
 
 Подбор коэффициентов ПИД-регулятора, действительно, то ещё шаманство. На картинке это выглядит весьма привлекательно:
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/PID_Compensation_Animated.gif)
