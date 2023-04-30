@@ -1,0 +1,10 @@
+.LOG
+20:13 24.04.2023
+Проект MKlon4.0
+PLATFORM: Espressif 32 (3.5.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 16MB Flash.
+RAM:   [=         ]  14.8% (used 48460 bytes from 327680 bytes)
+Flash: [==        ]  18.9% (used 1237794 bytes from 6553600 bytes)
+
+MPins: -D MKLON4_0            ; Версия платы 4.0
+

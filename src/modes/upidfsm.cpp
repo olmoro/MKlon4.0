@@ -317,7 +317,7 @@ Serial.print("ParamMult=0x");   Serial.println(Tools->getParamMult(), HEX);
         break;
       default:;
     }
-    Display->showVolt(Tools->getRealVoltage(), 3);
+    Display->showVolt(Tools->getRealVoltage(), 2);
     Display->showPidV(kp, 2);
     Display->showMode((char*)"        KP         ");
     (Tools->getState() == Tools->getStatusPidVoltage()) ? 
@@ -374,7 +374,7 @@ Serial.print("ParamMult=0x");   Serial.println(Tools->getParamMult(), HEX);
         break;
       default:;
     }
-    Display->showVolt(Tools->getRealVoltage(), 3);
+    Display->showVolt(Tools->getRealVoltage(), 2);
     Display->showPidV(ki, 2);
     Display->showMode((char*)"        KI         ");
     (Tools->getState() == Tools->getStatusPidVoltage()) ? 
@@ -427,7 +427,7 @@ Serial.print("ParamMult=0x");   Serial.println(Tools->getParamMult(), HEX);
         break;
       default:;
     }
-    Display->showVolt(Tools->getRealVoltage(), 3);
+    Display->showVolt(Tools->getRealVoltage(), 2);
     Display->showPidV(kd, 2);
     Display->showMode((char*)"        KD         ");
     (Tools->getState() == Tools->getStatusPidVoltage()) ? 
@@ -503,7 +503,7 @@ Serial.print("ParamMult=0x");   Serial.println(Tools->getParamMult(), HEX);
       case MKeyboard::C_CLICK:  Board->buzzerOn();        return new MExit(Tools);
     default:;
     }
-    Display->showVolt(Tools->getRealVoltage(), 3);
+    Display->showVolt(Tools->getRealVoltage(), 2);
 
     
     //Display->showAmp (Tools->getRealCurrent(), 3);

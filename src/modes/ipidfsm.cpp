@@ -50,7 +50,7 @@
 
 
 
-  Версия от  20.04.2023
+  Версия от  30.04.2023
   */
 
 #include "modes/ipidfsm.h"
@@ -502,7 +502,7 @@ namespace MIPid
     }
     //Display->showVolt(Tools->getRealVoltage(), 3);
     //Display->showAmp (Tools->getRealCurrent(), 3);
-    Tools->showVolt(Tools->getRealVoltage(), 3, 2);
+    Tools->showVolt(Tools->getRealVoltage(), 2, 2);
     Tools->showAmp (Tools->getRealCurrent(), 3, 2);
     return this;
   };
