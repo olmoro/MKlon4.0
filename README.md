@@ -46,11 +46,7 @@
 9. [About Me](#about)
 
 ***
-![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_2.png)
-![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_3.png)
-![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_4.png)
-![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_1.png)
-![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/full_1.png)
+
 ![](https://github.com/olmoro/MKlon4.0/blob/main/documents/full/img/MKlon4.png)
 
 ## <p align="center"> Как это работает.<a name="hard"></a>
