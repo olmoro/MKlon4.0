@@ -1558,12 +1558,12 @@ void restoreState( int mode )
 ## <p align="center">7. Документация.<a name="docs"></a>
 
 ## <p align="center"> Плата управления. Схема.<a name="sch1"></a>
-![Лист 1](https://github.com/olmoro/MKlon4.0/blob/main/documents/esp/sch/esp-samd4.0v3(1).pdf)
+![Лист 1](https://github.com/olmoro/MKlon4.0/blob/main/documents/cpu/sch/cpu4.0v5_1.pdf)
 
-![Лист 2](https://github.com/olmoro/MKlon4.0/blob/main/documents/esp/sch/esp-samd4.0v3(2).pdf)
+![Лист 2](https://github.com/olmoro/MKlon4.0/blob/main/documents/cpu/sch/cpu4.0v5_2.pdf)
 
 ## <p align="center"> Силовая плата. Схема.<a name="sch2"></a>
-![Лист 1](https://github.com/olmoro/MKlon4.0/blob/main/documents/pow/sch/pow4.0v3.pdf)
+![Лист 1](https://github.com/olmoro/MKlon4.0/blob/main/documents/pow/sch/pow4.0v5.pdf)
 
 ***
 ## <p align="center">8.Полезные ссылки<a name="useful_links"></a>
