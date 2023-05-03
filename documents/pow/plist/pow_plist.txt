@@ -1,10 +1,4 @@
-Partlist
-
 Exported from pow4.0v5.sch at 02.05.2023 8:21
-
-EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
-
-Assembly variant: 
 
 Part     Value          Device              Package       Library              Sheet
 
@@ -27,11 +21,12 @@ C16      100µF 25v      CPOL-EUE5-6         E5-6          rcl_moro             1
 DA1      MIC4420M       MIC4420M            SO-08         transistor-power     1
 DA2      MIC4420M       MIC4420M            SO-08         transistor-power     1
 DA4      LM321          LM321MF             SOT23-5       linear               1
+
 J1                      0R                  0R/10         jumper               1
+
 L1       560µH          BS11                BS11          inductor-neosid-moro 1
 L2       47MKHR         47MKHR              47MKHR        MKlon                1
-MINUS                   3,81/1,4            3,81/1,4      wirepad              1
-PLUS                    3,81/1,4            3,81/1,4      wirepad              1
+
 R1                      R-EU_R1206          R1206         rcl_moro             1
 R2       39 Om          R-0515/20           0515/20       Q921                 1
 R3       1k2            R-0515/20           0515/20       Q921                 1
@@ -56,21 +51,26 @@ R21      1k             R-EU_R1206          R1206         rcl_moro             1
 R22      1k             R-EU_R1206          R1206         rcl_moro             1
 R23                     R-EU_0414/15        0414/15       rcl_moro             1
 R24                     R-EU_0414/15        0414/15       rcl_moro             1
+
 RS1      15S-1.3        15S-1.3             15S-1.3       Q921                 1
+
 SV1      PJ017          PJ017               PJ017         MKlon                1
 SV2      PJ017          PJ017               PJ017         MKlon                1
 SV3      PJ017          PJ017               PJ017         MKlon                1
 SV4      PJ017          PJ017               PJ017         MKlon                1
+
 VD1      MBR20100_M     MBR20100_M          TO220ACA      MKlon                1
 VD2      4148           DIODESMA            SMADIODE      microbuilder         1
 VD3      SS16           SS16                DO214AC       diode-1              1
 VD4      FR601          DIODE-1_DIODE-P6-15 DIODE-1_P6-15 urc-2base            1
 VD5      BZV55-C10      ZENER-DIODESOD80C   SOD80C        diode-1              1
+
 VT1      IRFP9540       IRFP9540            TO220BHH      MKlon                1
 VT2      STP16NF06FP    STP16NF06FP         TO220BHH      MKlon                1
 VT3      IRLML5203      IRLML5203           MICRO3        transistor-power     1
 VT4      IRLR2905       IRLR2905            TO252         transistor-fet_moro  1
 VT5      IRLR2905       IRLR2905            TO252         transistor-fet_moro  1
+
 X1                      FE08-2              FE08-2        con-lsta_moro        1
 X2                      JP1E                JP1           jumper_moro          1
 X3       WF-3 (WF-2)    WF-3                WF-3          moro2                1
